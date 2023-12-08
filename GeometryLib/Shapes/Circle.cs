@@ -7,7 +7,8 @@ namespace GeometryLib.Shapes
 {
     public class Circle : IShape
     {
-        public readonly double _radius;
+        private double _radius;
+        public double Radius => _radius;
         public Circle(double radius)
         {
             _radius = radius;
@@ -15,7 +16,7 @@ namespace GeometryLib.Shapes
         
         public double GetArea()
         {
-            return Math.PI * _radius * _radius;
+            return Math.PI * Radius * Radius;
         }
     }
 }

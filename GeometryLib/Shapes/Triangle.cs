@@ -13,14 +13,9 @@ namespace GeometryLib.Shapes
         public readonly double C;
         public Triangle(double a, double b, double c)
         {
-            if(a > 0 & b > 0 & c > 0 & a + b > c & b + c > a & a + c > b){
-                A = a;
-                B = b;
-                C = c;
-            }
-            else{
-                throw new ArgumentException("Такой треугольник не возможен!");
-            }
+            A = a;
+            B = b;
+            C = c;
         }
         public bool IsRectangle{
             get{
